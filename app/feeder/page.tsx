@@ -76,13 +76,13 @@ const page: FC<pageProps> = ({}) => {
                 <Button type="submit">Search</Button>
               </div>
             </div>
-            <div className='text-end'>
+            <div className='md:text-end'>
               <Popover>
                 <PopoverTrigger asChild>
                   <Button
                     variant={"outline"}
                     className={cn(
-                      "w-[280px] justify-start text-left font-normal",
+                      "w-full justify-start text-left font-normal",
                       !date && "text-muted-foreground"
                     )}
                   >
@@ -101,7 +101,7 @@ const page: FC<pageProps> = ({}) => {
               </Popover>
               </div>
           </CardContent>
-        </Card>
+      </Card>
       </div>
       <div className='my-6'>
         <Card>
